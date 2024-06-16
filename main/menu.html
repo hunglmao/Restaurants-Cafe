@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>猫カフェ</title>
+    <link rel="stylesheet" href="./menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=New+Tegomin&family=Noto+Serif+JP:wght@200..900&family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Serif+JP:wght@200..900&family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <body>
+    <div class="image-container">
+      <img src="/homework/testing/img/mainImg2.jpg" alt="Image" class="blur" />
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="./main.html">Trang Chủ</a></li>
+          <li><a href="#about">Sự Kiện</a></li>
+          <li id="mainLogo"><a href="./main.html">猫カフェ</a></li>
+          <li id="picked"><a href="./menu.html">Thực Đơn</a></li>
+          <li><a href="#contact">Thông Báo</a></li>
+        </ul>
+      </nav>
+      <div class="image-text">
+        <p><span id="titleA">Café</span>/ Nhà Hàng</p>
+        <h1>Thực Đơn</h1>
+        <br />
+        <p></p>
+        <button>Đặt bàn ngay</button>
+      </div>
+      <img src="path/to/your/image.jpg" alt="Image" />
+    </div>
+    <div class="icons">
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-twitter-x"></i>
+      <i class="bi bi-instagram"></i>
+    </div>
+    <div class="icons2">
+      <i class="bi bi-geo-alt-fill"></i>
+      <span>83 Cao Bá Quát Quận 1 Tp.Hồ Chí Minh</span>
+    </div>
+    <div class="container_text">
+      <div class="decorative-line"></div>
+    </div>
+    <div class="container">
+      <div class="filter">
+        <h3>Menu Tổng Hợp</h3>
+        <label
+          ><input
+            type="radio"
+            name="filter"
+            value="All"
+            onchange="filterItems()"
+          /><span>Tất cả</span></label
+        >
+        <label
+          ><input
+            type="radio"
+            name="filter"
+            value="CaPhe"
+            onchange="filterItems()"
+          /><span>Cà Phê</span></label
+        >
+        <label
+          ><input
+            type="radio"
+            name="filter"
+            value="SinhTo"
+            onchange="filterItems()"
+          /><span>Sinh Tố </span></label
+        >
+        <label
+          ><input
+            type="radio"
+            name="filter"
+            value="Kem"
+            onchange="filterItems()"
+          /><span>Nước Ngọt</span></label
+        >
+        <label
+          ><input
+            type="radio"
+            name="filter"
+            value="BanhNgot"
+            onchange="filterItems()"
+          /><span>Khác</span></label
+        >
+      </div>
+      <div class="grid-container">
+        <div class="grid">
+          <div class="item" data-category="CaPhe">
+            <img src="./img/background.jpg" alt="CaPhe" />
+            <p1>latte Mèo</p1>
+            <p>60.000 VNĐ</p>
+            <button>Đặt mua</button>
+          </div>
+          <div class="item" data-category="SinhTo">
+            <img
+              src="https://hoaqua.org/wp-content/uploads/2019/04/sinh-t%E1%BB%91-b%C6%A1-300x201.jpg"
+              alt="SinhTo"
+            />
+            <p1>Sinh Tố Bơ</p1>
+            <p>30.000 VNĐ</p>
+            <button>Đặt mua</button>
+          </div>
+          <div class="item" data-category="Kem">
+            <img
+              src="https://aloduasap.com/wp-content/uploads/2021/09/kem-dua.webp"
+              alt="Kem"
+            />
+            <p1>Kem Dừa</p1>
+            <p>60.000 VNĐ</p>
+            <button>Đặt mua</button>
+          </div>
+          <div class="item" data-category="BanhNgot">
+            <img
+              src="https://blog.onelife.vn/wp-content/uploads/2021/10/cach-lam-banh-kem-dau-tay-xinh-xan-banh-banh-ngot-557489928314.jpg"
+              alt="BanhNgot"
+            />
+            <p1>Bánh Gato Dâu</p1>
+            <p>55.000 VNĐ</p>
+            <button>Đặt mua</button>
+          </div>
+          <div class="item" data-category="CaPhe">
+            <img
+              src="https://product.hstatic.net/1000075078/product/1639377904_bac-siu_525b9fa5055b41f183088c8e479a9472.jpg"
+              alt="CaPhe"
+            />
+            <p1>Bạc Xỉu</p1>
+            <p>30.000 VNĐ</p>
+            <button>Đặt mua</button>
+          </div>
+          <div class="item" data-category="SinhTo">
+            <img
+              src="https://cdn.tgdd.vn/2021/03/CookRecipe/GalleryStep/sinh-to-dua-hau-dau.jpg"
+              alt="SinhTo"
+            />
+            <p1>Sinh Tố Dưa Hấu</p1>
+            <p>40.000 VNĐ</p>
+            <button>Đặt mua</button>
+          </div>
+          <div class="item" data-category="Kem">
+            <img
+              src="https://cdn.tgdd.vn/2022/10/CookDishThumb/cach-trang-tri-kem-ly-kem-vien-xinh-xan-va-dep-mat-thumb-620x620.jpg"
+              alt="Kem"
+            />
+            <p1>Kem Ly Nhiệt Đới</p1>
+            <p>55.000 VNĐ</p>
+            <button>Đặt mua</button>
+          </div>
+          <div class="item" data-category="BanhNgot">
+            <img
+              src="https://product.hstatic.net/200000449489/product/6.1_411f479af1c9400a8501c4e892373ef5_master.jpg"
+              alt="BanhNgot"
+            />
+            <p1>Bánh Quýt ngọt</p1>
+            <p>60.000 VNĐ</p>
+            <button>Đặt mua</button>
+          </div>
+          <div class="item" data-category="BanhNgot">
+            <img
+              src="https://anhquanbakery.com/uploads/images/Chesse-Cake-2.jpeg"
+              alt="BanhNgot"
+            />
+            <p1>Bánh Phô Mai</p1>
+            <p>60.000 VNĐ</p>
+            <button>Đặt mua</button>
+          </div>
+          <div class="item" data-category="BanhNgot">
+            <img
+              src="https://goldensmiletravel.com/uploads/images/2022/04/28/banh-sung-bo-2-1651140812.jpg"
+              alt="BanhNgot"
+            />
+            <p1>Bánh Sừng</p1>
+            <p>60.000 VNĐ</p>
+            <button>Đặt mua</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-section">
+        <h3>Giới thiệu về chúng tôi</h3>
+        <p>
+          Một trong những quán cà phê có mặt tại Việt Nam gần đây với phong cách
+          Nhật Bản vừa cổ điển vừa hiện đại, Giá cả hợp lý với sinh viên.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Thông Tin Liên Hệ</h3>
+        <i class="bi bi-geo-alt-fill"></i>
+        <span>83 Cao Bá Quát Quận 1 Tp.Hồ Chí Minh Việt Nam</span>
+        <br /><i class="bi bi-telephone"></i>
+        <span>SĐT: 0923826973</span>
+        <br /><i class="bi bi-envelope-fill"></i>
+        <span>
+          Gmail:
+          <a href="https://policies.google.com/privacy?hl=en"
+            >hungawsd@gmail.com</a
+          ></span
+        >
+      </div>
+      <div class="footer-section">
+        <h3>Thời Gian Mở Cửa Hàng Tuần</h3>
+        <p>THỨ 2- THỨ 5<br />5:00 SÁNG - 10:00 TỐI</p>
+        <p>THỨ 6- CHỦ NHẬT<br />6:00 SÁNG - 11:00 TỐi</p>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
